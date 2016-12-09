@@ -45,12 +45,13 @@ ZSH_THEME="mh"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git history-substring-search common-aliases)
+plugins=(git history-substring-search common-aliases screen)
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
+export PATH="/opt/BullseyeCoverage/bin:/usr/lib64/ccache:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/root/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -78,10 +79,36 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# From .bashrc
+
+# Add to path without duplicates
+pathadd() {
+    if [ -d "$1" ] && [[ ":$PATH:" != *":$1:"* ]]; then
+        PATH="${PATH:+"$PATH:"}$1"
+    fi
+}
+
+# Proxy configuration
+# export http_proxy=http://
+# export https_proxy=http://
+# export ftp_proxy=http://
+# export GIT_PROXY_COMMAND=~/git-proxy-wrapper
 
 # User specific aliases and functions
 alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
 
+# Source global definitions
+# if [ -f /etc/bashrc ]; then
+#	. /etc/bashrc
+# fi
+
+# Do not share history with other terminals
+unsetopt sharehistory
+
+# Stop to be disturbed by Ctrl-S ctrl-Q in terminals:
+stty -ixon
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 

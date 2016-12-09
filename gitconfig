@@ -1,6 +1,6 @@
 [user]
-    name = My Name
-    email = my@email.com
+    name = Andrea Grandi
+    email = andrea.grandi@intel.com
 
 [color]
     branch = auto
@@ -25,3 +25,14 @@
 
 [alias]
     log1 = log --pretty=oneline
+    log1d = log --pretty=format:'%h %ad %s (%an)' --date=short
+    lgb = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset%n' --abbrev-commit --date=relative --branches
+
+[credential]
+    helper = cache
+
+[push]
+     default = current
+
+[help]
+     autocorrect = 10
