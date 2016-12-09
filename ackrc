@@ -1,0 +1,13 @@
+# Use color, even when piping to another process
+--color
+
+## Add types
+#--type-set=puppet=.pp,.erb
+#--type-set=sublime=.sublime-project,.sublime-workspace
+
+# Ignores
+--ignore-dir=bin
+--ignore-dir=local
+--ignore-file=is:cscope.out
+--ignore-file=is:tags
+--ignore-file=is:.tags
