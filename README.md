@@ -1,3 +1,3 @@
-# myrc
+# Dotfiles
 
-A collection of my personal .*rc and configuration files
+A collection of my personal dot files
