@@ -4,11 +4,12 @@ A collection of my personal dotfiles
 
 ## Command line tools
 
-Other tools:
+Command line tools:
 
 * Zsh
 * Tmux
-* ack
+* [ack](http://beyondgrep.com/)
+* [fzf](https://github.com/junegunn/fzf)
 
 Install [oh-my-zsh](http://ohmyz.sh/):
 
