@@ -22,6 +22,7 @@ nmap <silent> cp "_cw<C-R>"<Esc>
 " Replace under cursor
 :nnoremap <Leader>s :%s/\<<C-r><C-w>\>//gc<Left><Left><Left>
 
+
 " ==== Nerd tree and taglist =====
 
 " Close vim if the only window left open is a NERDTree?
@@ -30,6 +31,20 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 " Adjust the default width of taglist window
 :let Tlist_WinWidth = 60
 let Tlist_Use_Right_Window = 1
+
+
+" ==== Nerd tree and taglist =====
+
+" Set same separator char as Tmux
+set fillchars+=vert:│
+highlight VertSplit cterm=NONE ctermfg=NONE ctermbg=NONE
+
+" " Navigation between split windows using ctrl + hjkl
+let g:tmux_navigator_no_mappings = 1
+nnoremap <silent> <c-j> :TmuxNavigateDown<cr>
+nnoremap <silent> <c-k> :TmuxNavigateUp<cr>
+nnoremap <silent> <c-h> :TmuxNavigateLeft<cr>
+nnoremap <silent> <c-l> :TmuxNavigateRight<cr>
 
 
 " ==== Function keys and toggles ====
@@ -45,13 +60,6 @@ let Tlist_Use_Right_Window = 1
 " No longer use tabs
 " :map <f7> :tabp<CR>
 " :map <f8> :tabn<CR>
-
-" Navigation between split windows using ctrl + hjkl
-nnoremap <c-j> <c-w>j
-nnoremap <c-k> <c-w>k
-nnoremap <c-h> <c-w>h
-nnoremap <c-l> <c-w>l
-
 
 
 " Linediff commands
@@ -88,7 +96,6 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
 
 " let g:airline_powerline_fonts = 1
-
 
 
 " ===== Cscope =====
