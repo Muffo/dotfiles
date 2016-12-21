@@ -2,7 +2,7 @@
 
 A collection of my personal dotfiles
 
-## Extra
+## Command line tools
 
 Other tools:
 
@@ -14,6 +14,8 @@ Install [oh-my-zsh](http://ohmyz.sh/):
 
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
+
+## Vim Plugins
 
 Use [pathogen.vim](https://github.com/tpope/vim-pathogen) to install the
 following VIM plugins:
@@ -32,3 +34,9 @@ following VIM plugins:
 * linediff
 * vim-easymotion
 
+
+## Extra
+
+### Putty configuration
+
+See [Solarized - PuTTY settings](https://github.com/altercation/solarized/tree/master/putty-colors-solarized)
