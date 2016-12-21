@@ -29,6 +29,7 @@ following VIM plugins:
 * [vim-better-whitespace.vim](https://github.com/ntpeters/vim-better-whitespace)
 * [vim-fugitive](https://github.com/tpope/vim-fugitive)
 * [vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator)
+* [vim-colors-solarized](https://github.com/altercation/vim-colors-solarized)
 * a.vim
 * cscope.vim
 * linediff

@@ -5,6 +5,11 @@ execute pathogen#infect()
 " Set color
 set t_Co=256
 
+" Set theme to Solarized Dark
+syntax enable
+set background=dark
+colorscheme solarized
+
 
 " Default indentation
 :set smartindent
