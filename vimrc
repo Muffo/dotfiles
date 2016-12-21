@@ -17,9 +17,10 @@ colorscheme solarized
 :set shiftwidth=4
 :set expandtab
 
-" Put a marker at Column 80
-let &colorcolumn=join(range(81,999),",")
-highlight ColorColumn ctermbg=235 guibg=#2c2d27
+
+" Highlight text that exceedes after 80 columns
+:au BufWinEnter * let w:m1=matchadd('Search', '\%<81v.\%>79v', -1)
+:au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
 
 " Change paste: replace with the content of the black hole register _
 nmap <silent> cp "_cw<C-R>"<Esc>
