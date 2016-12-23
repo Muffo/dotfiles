@@ -11,11 +11,11 @@ Zsh with [oh-my-zsh](http://ohmyz.sh/):
 
 ## Command line tools
 
-* [Tmux](https://tmux.github.io)
-* [ack](http://beyondgrep.com/)
-* [fzf](https://github.com/junegunn/fzf)
-* [cdiff](https://github.com/ymattw/cdiff)
-* [cgdb](https://cgdb.github.io)
+* [Tmux](https://tmux.github.io): terminal multiplexer
+* [ack](http://beyondgrep.com/): a tool like grep, optimized for programmers
+* [fzf](https://github.com/junegunn/fzf): command-line fuzzy finder
+* [cdiff](https://github.com/ymattw/cdiff): colored, incremental diff 
+* [cgdb](https://cgdb.github.io): console front-end to the GNU debugger
 * ctags
 
 
