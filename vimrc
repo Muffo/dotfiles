@@ -1,4 +1,4 @@
-" Vundle
+" ==== Vundle setup ==== 
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
