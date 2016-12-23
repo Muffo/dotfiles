@@ -2,18 +2,21 @@
 
 A collection of my personal dotfiles
 
-## Command line tools
+## Shell
 
-Command line tools:
-
-* Zsh
-* Tmux
-* [ack](http://beyondgrep.com/)
-* [fzf](https://github.com/junegunn/fzf)
-
-Install [oh-my-zsh](http://ohmyz.sh/):
+Zsh with [oh-my-zsh](http://ohmyz.sh/):
 
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+
+## Command line tools
+
+* [Tmux](https://tmux.github.io)
+* [ack](http://beyondgrep.com/)
+* [fzf](https://github.com/junegunn/fzf)
+* [cdiff](https://github.com/ymattw/cdiff)
+* [cgdb](https://cgdb.github.io)
+* ctags
 
 
 ## Vim Plugins
