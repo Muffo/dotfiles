@@ -18,24 +18,17 @@ Install [oh-my-zsh](http://ohmyz.sh/):
 
 ## Vim Plugins
 
-Use [pathogen.vim](https://github.com/tpope/vim-pathogen) to install the
-following VIM plugins:
+Use [Vundle](https://github.com/VundleVim/Vundle.vim) to install 
+and manage the VIM plugins:
 
-* [vim-sensible](https://github.com/tpope/vim-sensible)
-* [ctrlp.vim](https://github.com/kien/ctrlp.vim)
-* [ack.vim](https://github.com/mileszs/ack.vim)
-* [vim-airline](https://github.com/vim-airline/vim-airline)
-* [nerdtree](https://github.com/scrooloose/nerdtree)
-* [taglist.vim](https://github.com/vim-scripts/taglist.vim)
-* [vim-better-whitespace.vim](https://github.com/ntpeters/vim-better-whitespace)
-* [vim-fugitive](https://github.com/tpope/vim-fugitive)
-* [vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator)
-* [vim-colors-solarized](https://github.com/altercation/vim-colors-solarized)
-* a.vim
-* cscope.vim
-* linediff
-* vim-easymotion
+    git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
+Brief help:
+
+    :PluginList       - lists configured plugins
+    :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+    :PluginSearch foo - searches for foo; append `!` to refresh local cache
+    :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
 
 ## Extra
 
