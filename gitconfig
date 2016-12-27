@@ -1,7 +1,3 @@
-[user]
-    name = Andrea Grandi
-    email = andrea.grandi@intel.com
-
 [color]
     branch = auto
     diff = auto
