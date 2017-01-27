@@ -110,5 +110,9 @@ unsetopt sharehistory
 # Stop to be disturbed by Ctrl-S ctrl-Q in terminals:
 stty -ixon
 
+# Do not exit from terminal on Ctrl-D
+set -o ignoreeof
+
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
