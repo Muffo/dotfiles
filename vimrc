@@ -180,36 +180,3 @@ let g:syntastic_c_checkers = ['make', 'cppcheck']
 " seem to happen.
 autocmd QuickFixCmdPost [^l]* nested cwindow
 autocmd QuickFixCmdPost    l* nested lwindow
-
-
-
-" ====== Stuff that I used in the past ======
-"
-" Open a NERDTree automatically when vim starts up if no files were specified
-" autocmd StdinReadPre * let s:std_in=1
-" autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-
-" The following would be great, but they don't work :(
-" let g:miniBufExplModSelTarget = 1
-" let g:miniBufExplorerMoreThanOne = 0
-" let g:miniBufExplModSelTarget = 0
-" let g:miniBufExplUseSingleClick = 1
-" let g:miniBufExplMapWindowNavVim = 1
-" let g:miniBufExplMapWindowNavArrows = 1
-" let g:miniBufExplMapCTabSwitchBufs = 1
-" let g:miniBufExplModSelTarget = 1
-
-" nmap <silent> cp :set opfunc=ChangePaste<CR>g@
-" function! ChangePaste(type, ...)
-"     silent exe "normal! `[v`]\"_c"
-"     silent exe "normal! p"
-" endfunction
-
-" --- Code refactoring ---
-" For local replace
-" nnoremap gr gd[{V%:s/<C-R>///gc<left><left><left>
-" For global replace
-" nnoremap gR gD:%s/<C-R>///gc<left><left><left>
-
-
-
