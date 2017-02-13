@@ -22,6 +22,7 @@ Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'tpope/vim-fugitive'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'vim-syntastic/syntastic'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -154,6 +155,32 @@ nnoremap  <leader>ff :call cscope#find('f', expand('<cword>'))<CR>
 nnoremap  <leader>fi :call cscope#find('i', expand('<cword>'))<CR>
 
 let g:cscope_silent = 1
+
+
+" ===== Syntastic =====
+
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+let g:syntastic_c_checkers = ['make', 'cppcheck']
+
+" Automatically open, but do not go to (if there are errors) the quickfix /
+" location list window, or close it when is has become empty.
+"
+" Note: Must allow nesting of autocmds to enable any customizations for quickfix
+" buffers.
+" Note: Normally, :cwindow jumps to the quickfix window if the command opens it
+" (but not if it's already open). However, as part of the autocmd, this doesn't
+" seem to happen.
+autocmd QuickFixCmdPost [^l]* nested cwindow
+autocmd QuickFixCmdPost    l* nested lwindow
+
 
 
 " ====== Stuff that I used in the past ======
