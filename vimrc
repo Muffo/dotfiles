@@ -1,4 +1,4 @@
-" ==== Vundle setup ==== 
+" ==== Vundle setup ====
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -13,6 +13,7 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'tpope/vim-sensible'
 Plugin 'kien/ctrlp.vim'
+Plugin 'FelikZ/ctrlp-py-matcher'
 Plugin 'mileszs/ack.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
@@ -23,6 +24,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'vim-syntastic/syntastic'
+Plugin 'vivien/vim-linux-coding-style'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -108,6 +110,11 @@ nnoremap <silent> <c-l> :TmuxNavigateRight<cr>
 " :set wildignore+=*/.hg/*,*/.svn/*
 " :set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.o,*.a,*.ko
 :set wildignore=
+
+" Use faster matcher
+let g:ctrlp_match_func = { 'match': 'pymatcher#PyMatch' }
+
+:nnoremap <Leader>] :CtrlPTag<cr>
 
 " ==== Air-line configuration ====
 :set laststatus=2
