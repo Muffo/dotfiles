@@ -49,8 +49,11 @@ colorscheme solarized
 
 
 " Highlight text that exceedes after 80 columns
-:au BufWinEnter * let w:m1=matchadd('Search', '\%<81v.\%>79v', -1)
-:au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
+:au BufWinEnter *.c,*.h let w:m1=matchadd('Search', '\%<81v.\%>79v', -1)
+:au BufWinEnter *.c,*.h let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
+
+" Change default search color
+:hi Search cterm=NONE ctermfg=grey ctermbg=blue
 
 " Change paste: replace with the content of the black hole register _
 nmap <silent> cp "_cw<C-R>"<Esc>
