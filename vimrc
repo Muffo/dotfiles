@@ -19,6 +19,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'scrooloose/nerdtree'
 Plugin 'vim-scripts/taglist.vim'
+Plugin 'majutsushi/tagbar'
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'tpope/vim-fugitive'
 Plugin 'christoomey/vim-tmux-navigator'
@@ -88,7 +89,7 @@ nnoremap <silent> <c-l> :TmuxNavigateRight<cr>
 
 " ==== Function keys and toggles ====
 :map <f5> :NERDTreeToggle<CR>
-:map <f6> :TlistToggle<CR>
+:map <f6> :TagbarToggle<CR>
 
 :map <f7> :bp<CR>
 :map <f8> :bn<CR>
