@@ -12,3 +12,4 @@ ln -s dotfiles/ackrc ~/.ackrc
 ln -s dotfiles/vimrc ~/.vimrc
 ln -s dotfiles/gitconfig ~/.gitconfig
 ln -s dotfiles/ctags ~/.ctags
+ln -s dotfiles/cgdbrc ~/.cgdb/cgdbrc
