@@ -2,8 +2,8 @@
 --color
 
 ## Add types
-#--type-set=puppet=.pp,.erb
-#--type-set=sublime=.sublime-project,.sublime-workspace
+--type-set=puppet=.pp,.erb
+--type-set=sublime=.sublime-project,.sublime-workspace
 
 # Ignores
 --ignore-dir=bin
