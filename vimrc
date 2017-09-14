@@ -92,9 +92,10 @@ nnoremap <silent> <c-l> :TmuxNavigateRight<cr>
 " ==== Function keys and toggles ====
 :map <f5> :NERDTreeToggle<CR>
 :map <f6> :TagbarToggle<CR>
-
 :map <f7> :bp<CR>
 :map <f8> :bn<CR>
+:map <C-n> :bp<CR>
+:map <C-m> :bn<CR>
 ":map <f9> :make<CR>
 :map <F10> :!./%<CR>
 :map <F11> :!ctags -R *<CR>
