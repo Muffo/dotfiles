@@ -13,3 +13,5 @@ ln -s dotfiles/vimrc ~/.vimrc
 ln -s dotfiles/gitconfig ~/.gitconfig
 ln -s dotfiles/ctags ~/.ctags
 ln -s dotfiles/cgdbrc ~/.cgdb/cgdbrc
+
+git config --global core.excludesfile ~/dotfiles/gitignore_global
