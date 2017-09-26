@@ -32,3 +32,6 @@
 
 [help]
      autocorrect = 10
+
+[core]
+     editor = vim
