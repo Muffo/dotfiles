@@ -16,6 +16,7 @@ Zsh with [oh-my-zsh](http://ohmyz.sh/):
 * [fzf](https://github.com/junegunn/fzf): command-line fuzzy finder
 * [cdiff](https://github.com/ymattw/cdiff): colored, incremental diff 
 * [cgdb](https://cgdb.github.io): console front-end to the GNU debugger
+* [tig](https://jonas.github.io/tig): text-mode interface for Git
 * ctags
 
 
