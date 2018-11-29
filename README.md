@@ -40,10 +40,16 @@ Brief help:
 
 See [Solarized - PuTTY settings](https://github.com/altercation/solarized/tree/master/putty-colors-solarized)
 
+### Git reup
+
+This is a convenient script to sync your local branch with remote.
+It performs the following operations: `stash save`, `pull --rebase` and `stash pop`.
+Copy the script git-reup to a folder inside your `$PATH`.
+
 ## License
 
     Dotfiles
-    Copyright (C) 2016  Andrea Grandi
+    Copyright (C) 2016-2018  Andrea Grandi
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
