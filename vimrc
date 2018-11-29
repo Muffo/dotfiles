@@ -1,3 +1,6 @@
+scriptencoding utf-8
+set encoding=utf-8
+
 " ==== Vundle setup ====
 set nocompatible              " be iMproved, required
 filetype off                  " required
@@ -39,6 +42,9 @@ filetype plugin indent on    " required
 
 " ==== Text editor general configuration ====
 
+" Speedup start time avoiding connection to X11 server
+set clipboard=exclude:.*
+
 " Set color
 set t_Co=256
 
@@ -48,11 +54,13 @@ set background=dark
 colorscheme solarized
 
 
-" Default indentation
+" Default indentation (see also editorconfig)
 :set smartindent
 :set tabstop=4
 :set shiftwidth=4
-:set expandtab
+" Align new line to the open (
+:set cino=(0
+" :set expandtab
 
 
 " Highlight text that exceedes after 80 columns
