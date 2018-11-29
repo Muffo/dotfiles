@@ -2,6 +2,7 @@
     branch = auto
     diff = auto
     status = auto
+    ui = auto
 
 [color "branch"]
     current = yellow reverse
@@ -23,15 +24,49 @@
     log1 = log --pretty=oneline
     log1d = log --pretty=format:'%h %ad %s (%an)' --date=short
     lgb = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset%n' --abbrev-commit --date=relative --branches
+    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    ci = commit
+    co = checkout
+    lchanges = "!csh -c 'git fetch $1 ; if($#argv>0) shift; git log FETCH_HEAD..HEAD $*'"
+    ldiffchanges = "!csh -c 'git fetch $1 ; if($#argv>0) shift; git diff FETCH_HEAD..HEAD $*'"
+    lfchanges = "!csh -c 'git fetch $1 ; if($#argv>0) shift; git log --pretty=\"format:\" --name-only FETCH_HEAD..HEAD $* | sort | uniq'"
+    parent = remote show -n origin
+    rchanges = "!csh -c 'git fetch $1 ; if($#argv>0) shift; git log HEAD..FETCH_HEAD $*'"
+    rdiffchanges = "!csh -c 'git fetch $1 ; if($#argv>0) shift; git diff HEAD..FETCH_HEAD $*'"
+    rfchanges = "!csh -c 'git fetch $1 ; if($#argv>0) shift; git log --pretty=\"format:\" --name-only HEAD..FETCH_HEAD $* | sort | uniq'"
+    root = rev-parse --show-toplevel
+    st = status
 
 [credential]
     helper = cache
 
 [push]
-     default = current
+    default = current
 
 [help]
-     autocorrect = 10
+    autocorrect = 10
 
 [core]
-     editor = vim
+    editor = vim
+    pager = less -FRSX
+    preloadindex = true
+    whitespace = trailing-space
+
+[diff]
+    mnemonicprefix = true
+    renames = true
+
+[log]
+    decorate = true
+
+[merge]
+    conflictstyle = diff3
+
+[pack]
+    threads = 0
+
+[advice]
+    statusHints = false
+
+[rerere]
+    enabled = true
