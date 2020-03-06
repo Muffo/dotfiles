@@ -18,7 +18,7 @@ Zsh with [oh-my-zsh](http://ohmyz.sh/):
 * [cgdb](https://cgdb.github.io): console front-end to the GNU debugger
 * [tig](https://jonas.github.io/tig): text-mode interface for Git
 * ctags
-
+* [bat](https://github.com/sharkdp/bat): a cat(1) clone with syntax highlighting
 
 ## Vim Plugins
 
