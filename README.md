@@ -2,19 +2,28 @@
 
 A collection of my personal dotfiles
 
-## Shell
+## Configure Dotfiles
+
+Clone the repository in your home folder and run the `bootstrap.sh`:
+
+    git clone https://github.com/Muffo/dotfiles.git
+    cd dotfiles
+    ./bootstrap.sh
+
+## Configure ZSH
 
 Zsh with [oh-my-zsh](http://ohmyz.sh/):
 
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
+At the end of the script, a prompt will ask to setup ZSH as default shell.
 
-## Command line tools
+## Command Line Tools
 
 * [Tmux](https://tmux.github.io): terminal multiplexer
 * [ack](http://beyondgrep.com/): a tool like grep, optimized for programmers
 * [fzf](https://github.com/junegunn/fzf): command-line fuzzy finder
-* [cdiff](https://github.com/ymattw/cdiff): colored, incremental diff 
+* [ydiff](https://github.com/ymattw/ydiff): colored, incremental diff (fomerly cdiff)
 * [cgdb](https://cgdb.github.io): console front-end to the GNU debugger
 * [tig](https://jonas.github.io/tig): text-mode interface for Git
 * ctags
@@ -34,9 +43,9 @@ Brief help:
     :PluginSearch foo - searches for foo; append `!` to refresh local cache
     :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
 
-## Extra
+## Extras
 
-### Putty configuration
+### Putty Configuration
 
 See [Solarized - PuTTY settings](https://github.com/altercation/solarized/tree/master/putty-colors-solarized)
 
@@ -49,7 +58,7 @@ Copy the script git-reup to a folder inside your `$PATH`.
 ## License
 
     Dotfiles
-    Copyright (C) 2016-2018  Andrea Grandi
+    Copyright (C) 2016-2020  Andrea Grandi
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
