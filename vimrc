@@ -35,6 +35,7 @@ Plugin 'junegunn/vim-easy-align'
 Plugin 'justinmk/vim-sneak'
 Plugin 'yuttie/comfortable-motion.vim'
 Plugin 'editorconfig/editorconfig-vim'
+Plugin 'AndrewRadev/linediff.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
