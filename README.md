@@ -27,6 +27,7 @@ At the end of the script, a prompt will ask to setup ZSH as default shell.
 * [cgdb](https://cgdb.github.io): console front-end to the GNU debugger
 * [tig](https://jonas.github.io/tig): text-mode interface for Git
 * ctags
+* cscope
 * [bat](https://github.com/sharkdp/bat): a cat(1) clone with syntax highlighting
 
 ## Vim Plugins
