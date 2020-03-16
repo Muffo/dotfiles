@@ -8,6 +8,8 @@
 # Ignores
 --ignore-dir=bin
 --ignore-dir=local
+--ignore-dir=.git
 --ignore-file=is:cscope.out
 --ignore-file=is:tags
 --ignore-file=is:.tags
+
