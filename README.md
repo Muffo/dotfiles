@@ -1,8 +1,8 @@
 # Dotfiles
 
-A collection of my personal dotfiles
+A collection of my personal dotfiles and work space settings.
 
-## Configure Dotfiles
+## Dotfiles Installation
 
 Clone the repository in your home folder and run the `bootstrap.sh`:
 
@@ -10,7 +10,7 @@ Clone the repository in your home folder and run the `bootstrap.sh`:
     cd dotfiles
     ./bootstrap.sh
 
-## Configure ZSH
+## ZSH Configuration
 
 Zsh with [oh-my-zsh](http://ohmyz.sh/):
 
@@ -55,6 +55,27 @@ See [Solarized - PuTTY settings](https://github.com/altercation/solarized/tree/m
 This is a convenient script to sync your local branch with remote.
 It performs the following operations: `stash save`, `pull --rebase` and `stash pop`.
 Copy the script git-reup to a folder inside your `$PATH`.
+
+### AutoHotKey
+
+On Windows, install [AutoHotKey](https://autohotkey.com) and use the script [CapsLock-Fix.ahk](CapsLock-Fix.ahk) for the following shortcuts:
+
+| Shortcut                         | Output                           |
+| -------------------------------- | -------------------------------- |
+| CAPSLOCK + { k, h, j, l }        | { Up, Left, Down, Right }        |
+| CAPSLOCK + ALT + { k, h, j, l }  | CTRL + { Up, Left, Down, Right } |
+| CAPSLOCK + CTRL + { k, h, j, l } | ALT + { Up, Left, Down, Right }  |
+| CAPSLOCK + { u, o }              | { Home, End }                    |
+| CAPSLOCK + { e, d }              | { PageUp, PageDown }             |
+| CAPSLOCK + < key >               | CTRL + < key >                   |
+| CAPSLOCK + ENTER                 | BACKSPACE                        |
+
+To start the script automatically:
+
+ 1. Windows start > **Run** and type `shell:startup`.
+ 2. Create a shortcut of the script in the Startup Folder: copy the script then, right-click and **Paste Shortcut**.
+ 
+Inspired by [madslundt/keybindings](https://github.com/madslundt/keybindings).
 
 ## License
 
