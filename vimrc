@@ -36,6 +36,8 @@ Plugin 'justinmk/vim-sneak'
 Plugin 'yuttie/comfortable-motion.vim'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'AndrewRadev/linediff.vim'
+Plugin 'Vimjas/vim-python-pep8-indent'
+Plugin 'whiteinge/diffconflicts'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -62,6 +64,12 @@ colorscheme solarized
 " Align new line to the open (
 :set cino=(0
 " :set expandtab
+
+":au BufRead,BufNewFile *.py set expandtab
+":au BufRead,BufNewFile *.py set tabstop=2
+":au BufRead,BufNewFile *.py set softtabstop=2
+":au BufRead,BufNewFile *.py set shiftwidth=2
+":au BufRead,BufNewFile *.py set autoindent
 
 
 " Highlight text that exceedes after 80 columns

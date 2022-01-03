@@ -122,7 +122,7 @@ export LESS_TERMCAP_ue=$(printf '\e[0m')     # leave underline mode
 export LESS_TERMCAP_us=$(printf '\e[04;36m') # enter underline mode - cyan
 
 # Always display diffs side by side
-export CDIFF_OPTIONS="-s"
+export YDIFF_OPTIONS="-s"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
