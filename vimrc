@@ -33,9 +33,10 @@ Plugin 'vivien/vim-linux-coding-style'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'junegunn/vim-easy-align'
 Plugin 'justinmk/vim-sneak'
-Plugin 'yuttie/comfortable-motion.vim'
+"Plugin 'yuttie/comfortable-motion.vim'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'AndrewRadev/linediff.vim'
+Plugin 'rightson/vim-p4-syntax'
 Plugin 'Vimjas/vim-python-pep8-indent'
 Plugin 'whiteinge/diffconflicts'
 
@@ -96,9 +97,9 @@ set undoreload=10000
 
 " ==== Confortable scrolling ====
 " Remove default mappings and enable only up and down
-let g:comfortable_motion_no_default_key_mappings = 1
-nnoremap <silent> <C-d> :call comfortable_motion#flick(100)<CR>
-nnoremap <silent> <C-u> :call comfortable_motion#flick(-100)<CR>
+" let g:comfortable_motion_no_default_key_mappings = 1
+" nnoremap <silent> <C-d> :call comfortable_motion#flick(100)<CR>
+" nnoremap <silent> <C-u> :call comfortable_motion#flick(-100)<CR>
 
 " ==== Easy Align ====
 " Start interactive EasyAlign in visual mode (e.g. vipga)
@@ -128,7 +129,7 @@ highlight VertSplit cterm=NONE ctermfg=NONE ctermbg=NONE
 let g:tmux_navigator_no_mappings = 1
 nnoremap <silent> <c-j> :TmuxNavigateDown<cr>
 nnoremap <silent> <c-k> :TmuxNavigateUp<cr>
-nnoremap <silent> <c-h> :TmuxNavigateLeft<cr>
+nnoremap <silent> <c-b> :TmuxNavigateLeft<cr>
 nnoremap <silent> <c-l> :TmuxNavigateRight<cr>
 
 
