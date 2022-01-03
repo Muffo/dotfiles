@@ -52,13 +52,20 @@ See [Solarized - PuTTY settings](https://github.com/altercation/solarized/tree/m
 
 ### Git reup
 
-This is a convenient script to sync your local branch with remote.
+[git-reup](extras/git-reup) is a convenient script to sync your local branch with remote.
 It performs the following operations: `stash save`, `pull --rebase` and `stash pop`.
-Copy the script git-reup to a folder inside your `$PATH`.
+Copy the script [git-reup](extras/git-reup) to a folder inside your `$PATH`.
+
+### ObinsKit
+
+Use [ObinsKit](https://www.hexcore.xyz/obinskit) to program the Anne Pro 2 mechanical keyboard:
+
+* [Layout](extras/obinskit_layout.json)
+* [Macros](extras/obinskit_macros.png)
 
 ### AutoHotKey
 
-On Windows, install [AutoHotKey](https://autohotkey.com) and use the script [CapsLock-Fix.ahk](CapsLock-Fix.ahk) for the following shortcuts:
+On Windows, install [AutoHotKey](https://autohotkey.com) and use the script [CapsLock-Fix.ahk](extras/CapsLock-Fix.ahk) for the following shortcuts:
 
 | Shortcut                         | Output                           |
 | -------------------------------- | -------------------------------- |
@@ -80,7 +87,7 @@ Inspired by [madslundt/keybindings](https://github.com/madslundt/keybindings).
 ## License
 
     Dotfiles
-    Copyright (C) 2016-2020  Andrea Grandi
+    Copyright (C) 2016-2022  Andrea Grandi
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
